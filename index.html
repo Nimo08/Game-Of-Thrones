@@ -1,59 +1,53 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Ping-Pong</title>
-  </head>
-  <body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Ping-Pong</h1>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4"></div>
-        <div class="nimo col-md-4">
-          <h2>About Ping Pong</h2>
-          <h3>Created by:</h3>
-          <h4>Nimo Mohamed</h4>
-          <h3>GitHub Username/URL:</h3>
-          <h4>Nimo08</h4>
-          <h3>Level 2 Test for:</h3>
-          <h4>Java</h4>
+  <html>
+    <head>
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="css/animate.css" rel="stylesheet" type="text/css">
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+      <div class="container">
+        <div class="jumbotron" id="jumbo1">
+          <h1>Let's Play Pig Dice</h1>
         </div>
-        <div class="col-md-4"></div>
-      </div>
-
-
+        <div class="jumbotron">
+          <div class="row" id="row1">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <h3>Created by:Nimo Mohamed</h3>
+              <h3>Github Username:Nimo08</h3>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-4"></div>
           <div class="col-md-4">
-          <h2>Let's Play</h2>
-          <h3>Rules:</h3>
-          <p>Ping Pong will count up to your number from 1 with
-            the following exceptions:</p>
-          <ol>
-            <li>Numbers divisible by 3 become "ping"</li>
-            <li>Numbers divisible by 5 become "pong"</li>
-            <li>Numbers divisible by 3 and 5 become "pingpong"</li>
-          </ol>
-          <form>
-            <div class="row">
-            <div class="form-group">
-              <label for="number">Enter a number</label>
-              <input id="number" class="form-control" type="text">
+            <h2>Rules</h2>
+            <ul>
+              <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+              <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+              <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+            </ul>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Player 1</h3>
+              <button>Roll</button>
+              <button>Hold</button>
+            </div>
+            <div class="col-md-6">
+              <h3>Player 2</h3>
+              <button>Roll</button>
+              <button>Hold</button>
             </div>
           </div>
-           <button type="submit" class="btn" id="button">Ping-Pong!</button>
-          </form>
-          <ul>
-          </ul>
         </div>
-        <div class="col-md-4"></div>
       </div>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-  </body>
-</html>
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/scripts.js"></script>
+    </body>
+  </html>
